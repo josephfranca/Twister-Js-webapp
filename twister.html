@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twister</title>
+<link rel="stylesheet" href="twister.css">
+</head>
+
+
+<body>
+
+  <h1>Twister</h1>
+    <!-- Criando o painel de cadastro e status dos jogadores-->
+
+  <div class="painel-jogadores">
+    <h2>Jogadores</h2>
+    <div class="cadastro-box">
+      <input type="text" id="nomeJogador" placeholder="Nome do jogador" maxlength="10">
+      <button id="btnAdicionar">Adicionar</button>
+    </div>
+    <p id="erroValidacao" class="msgErro"></p> <!--Mensagem de erro-->
+    <ul id="listaJogadores" class="listaJogadores"></ul> <!--Tabelinha de jogadores-->
+
+    <div id="statusTurno" class="statusTurno">
+      <p>Vez de: <strong id="jogadorAtual">Adicione jogadores para começar</strong></p>
+    </div>
+  </div>
+
+
+  <div class="roleta-area">
+    <div class="roleta-box">
+      <div class="seta"></div>
+      <div class="roleta" id="roleta"></div>
+    </div>
+    <button id="girar">Girar</button>
+    <p id="resultado">Aperte em Girar</p>
+  </div>
+
+  <div class="tapete">
+    <div class="linha">
+      <div class="bola vermelho"></div>
+      <div class="bola vermelho"></div>
+      <div class="bola vermelho"></div>
+      <div class="bola vermelho"></div>
+      <div class="bola vermelho"></div>
+      <div class="bola vermelho"></div>
+    </div>
+    <div class="linha">
+      <div class="bola amarelo"></div>
+      <div class="bola amarelo"></div>
+      <div class="bola amarelo"></div>
+      <div class="bola amarelo"></div>
+      <div class="bola amarelo"></div>
+      <div class="bola amarelo"></div>
+    </div>
+    <div class="linha">
+      <div class="bola azul"></div>
+      <div class="bola azul"></div>
+      <div class="bola azul"></div>
+      <div class="bola azul"></div>
+      <div class="bola azul"></div>
+      <div class="bola azul"></div>
+    </div>
+    <div class="linha">
+      <div class="bola verde"></div>
+      <div class="bola verde"></div>
+      <div class="bola verde"></div>
+      <div class="bola verde"></div>
+      <div class="bola verde"></div>
+      <div class="bola verde"></div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
